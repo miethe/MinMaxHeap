@@ -25,15 +25,13 @@ public class MinMaxHeap {
 			arr[1] = x;
 			currentSize++;
 		}
-		else{
+		else {
 			arr[++currentSize] = x;
 			percolateUp(currentSize);
 		}
 	}//PRE: The heap is not full
-	public int min(){
-		
-		return arr[1]; //return root
-	}//PRE: The heap is not empty
+	public int min() {return arr[1];} //return roo
+	//PRE: The heap is not empty
 	public int max(){
 		if(currentSize==1){
 			maxIdx = 1;
